@@ -1,6 +1,5 @@
 package kr.or.nextit.member.service;
 
-import java.io.IOException;
 import java.util.List;
 
 import javax.inject.Inject;
@@ -9,16 +8,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import org.apache.ibatis.session.SqlSession;
-import org.apache.ibatis.session.SqlSessionFactory;
 import org.springframework.stereotype.Service;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import kr.or.nextit.common.util.NextITSqlSessionFactory;
 import kr.or.nextit.common.vo.RoleInfoVO;
 import kr.or.nextit.common.vo.UserRoleVO;
 import kr.or.nextit.exception.BizDuplicateKeyException;
